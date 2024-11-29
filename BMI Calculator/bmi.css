@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #89cff0, #f0e68c);
+}
+
+.bmi-calculator {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 360px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input[type="number"] {
+    width: 98%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+
+input[type="number"]:focus {
+    border-color: #4caf50;
+}
+
+.cal {
+    background: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.cal:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#yourbmi {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+#evaluationMessage {
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+

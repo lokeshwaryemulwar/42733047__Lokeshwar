@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bmi.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="bmi-calculator">
+        <h1>BMI CALCULATOR</h1>
+        <div class="input-container">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" min="25" max="180" value="60" required>
+        </div>
+        <div class="input-container">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" min="100" max="220" value="160" required>
+        </div>
+        <button class="cal" id="calculateButton">Calculate BMI</button>
+        <div class="result">
+            <p><strong>Your BMI :</strong> <span id="yourbmi"></span></p>
+            <p id="evaluationMessage"></p>
+        </div>
+    </div>
+    <script src="./bmi.js"></script>
+</body>
+</html>
